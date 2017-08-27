@@ -1,30 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-   
-   
-<script language="JavaScript"> <!--  não permitir usar o lado direito do mause sobre a página para copiar a pagina
-
-function verfonte()
-{
-if (event.button==2)
-{
-window.alert('Sem permissão!!!!')
-}
-}
-document.onmousedown=verfonte
-
-</script>
-
-
-
-<script language="javascript"> <!--  não permitir usar o CTRL+ ...  sobre a página para copiar a pagina
-function validateKey (evt)
-{if (evt.keyCode == '17')
-{alert("Sem permissão!")
-return false}
-return true}
-</script>
 
 <title>Portal do aluno</title>
  <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,38 +29,55 @@ function somente_numero(campo){
 
 </head>
 <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+<header id="header-principal" class="container-fluid">
+    <div class="header-column">
+     <div class="logo-header">
+        <img alt="Governo do Estado do Rio de Janeiro" src="Portal%20do%20aluno_arquivos/logo_gov_img.jpg" height="100px">
+     </div>
+     <p class="text-header">
+        Governo do Estado do Rio de Janeiro <br />
+        Secretaria de Estado de Ciência e Tecnologia<br />
+        Centro Universitário Estadual da Zona Oeste - UEZO
+     </p>
+    </div>
 
-	﻿
+    <div class="header-column">
+        <img alt="Centro Universitário Estadual da Zona Oeste" src="Portal%20do%20aluno_arquivos/logo_uezo.jpg" height="80px">
+    </div>
+</header>
 
-<br>
-<img style="position:absolute;top:35px;left:10px;height:100px" alt="Governo do Estado do Rio de Janeiro" src="Portal%20do%20aluno_arquivos/logo_gov_img.jpg">
-<p style="position:absolute;top:55px;left:100px;">Governo do Estado do Rio de Janeiro</p>
-<p style="position:absolute;top:70px;left:100px;">Secretaria de Estado de Ciência e Tecnologia</p>
-<p style="position:absolute;top:85px;left:100px;">Centro Universitário Estadual da Zona Oeste - UEZO	</p>
+<section class="main-div">
+   <div class="form-space">
+	<p class="form-title"> <b>Aluno</b></p> 
+    <table>
+	<form action="login_aluno.php" method="post">
+		<tbody>
+         <tr>
+           <td>Matrícula </td>
+           <td><input name="usernameAluno" required="" placeholder="" onkeyup="javascript:somente_numero(this);" maxlength="10" type="text"></td>
+         </tr>
+         <tr>
+           <td>Senha</td>
+           <td><input name="passwordAluno" type="password"></td>
+         </tr>
+		 <tr>
+           <td><div>Some: 11 + 20 = </div></td>
+           <td>
+            <input name="captcha" id="captcha" maxlength="2" required="required" size="2" onkeyup="javascript:somente_numero(this);" type="text">
+		    <input name="validarcaptcha" id="captcha" maxlength="2" value="31" size="2" type="hidden">
+		    <input value="Enviar" type="submit">
+		   </td>
+         </tr>
+		 <tr>
+           <td></td>
+           <td><a href="https://www.uezo.rj.gov.br/aluno/msg_esqueci_a_senha.php" style="font-size:8pt"> Esqueci a senha!</a></td>
+         </tr>
+	    </tbody>
+    </form>
+    </table>
+   </div>
+</section>
+                    
 
-<img style="position:absolute;top:50px;left:500px;width:250px;height:80px;" alt="Centro Universitário Estadual da Zona Oeste" src="Portal%20do%20aluno_arquivos/logo_uezo.jpg">
-
-<hr style="position:relative;top:130px;">
-	<center>
-    <br><br><br><br>
-	    <br><br><br><br>
-	
-	<p font="" size="5"> <b>Aluno</b></p> 
-	<br><br><table>
-	
-	<form action="login_aluno.php" method="post"></form>
-		<tbody><tr><td>Matrícula </td><td>   <input name="usernameAluno" required="" placeholder="" onkeyup="javascript:somente_numero(this);" maxlength="10" type="text">   </td></tr>
-         <tr><td>Senha</td><td>    <input name="passwordAluno" type="password">     </td></tr>
-		  <tr><td> <div>Some: 11 + 20 = </div></td> <td>
-		  <input name="captcha" id="captcha" maxlength="2" required="required" size="2" onkeyup="javascript:somente_numero(this);" type="text">
-		   <input name="validarcaptcha" id="captcha" maxlength="2" value="31" size="2" type="hidden">
-		   <input value="Enviar" type="submit">
-		  </td></tr>
-		  <tr><td></td><td><a href="https://www.uezo.rj.gov.br/aluno/msg_esqueci_a_senha.php" style="font-size:8pt"> Esqueci a senha!</a></td></tr>
-	</tbody></table>
-	
-	  <br><br><br><br>
-	  	</center>	
-
-
-</body></html>
+</body>
+</html>

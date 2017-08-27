@@ -1,0 +1,76 @@
+body{
+    font-family: "Helvetica", Sans-Serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: #ddd;
+}
+
+/*********************************** HEADER ***/
+header#header-principal{
+    height: 120px;
+    background-color: #fff;
+}
+.header-column{
+    width: 48vw;
+    float: left;
+    padding: 10px 0px;
+}
+.logo-header{
+    width: 110px;
+    float: left;
+}
+.text-header{
+    width: 330px;
+    float: left;
+}
+
+/*********************************** FORM ***/
+.main-div{
+    margin: 0 auto;
+    margin-top: 10vw;
+    width: 25%;
+}
+.form-space{
+    background-color: #fff;
+    padding: 10px;
+}
+.form-title{
+    size: 5;
+}
+
+/*********************************** BOOTSTRAP COPIES ***/
+.container-fluid {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
