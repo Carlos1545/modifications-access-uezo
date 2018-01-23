@@ -13,8 +13,8 @@
 	
 	<script src="js/js-modifications.js"></script>
 </head>
-<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
-	<header class="row" id="nav-superior">
+<body> <!--oncontextmenu="return false" onselectstart="return false" ondragstart="return false"-->
+	<header id="nav-superior">
 	  <div class="container">
 		<div class="col-md-6 text-center" id="logo-wtext">
 			<img alt="Governo do Estado do Rio de Janeiro" src="images/logo_gov_img.jpg" height="80px">
@@ -32,35 +32,36 @@
 	</header>
 
 	<section class="main-div">
-	   <div class="form-space">
-		<p class="form-title"> <b>Aluno</b></p> 
-		<table>
-		<form action="login_aluno.php" method="post">
-			<tbody>
-			 <tr>
-			   <td>Matrícula </td>
-			   <td><input name="usernameAluno" required="" placeholder="" onkeyup="javascript:somente_numero(this);" maxlength="10" type="text"></td>
-			 </tr>
-			 <tr>
-			   <td>Senha</td>
-			   <td><input name="passwordAluno" type="password"></td>
-			 </tr>
-			 <tr>
-			   <td><div>Some: 11 + 20 = </div></td>
-			   <td>
-				<input name="captcha" id="captcha" maxlength="2" required="required" size="2" onkeyup="javascript:somente_numero(this);" type="text">
+	  <div class="container">
+	   <div class="col-sm-4"></div>
+	   <div class="col-sm-4" id="form-space">
+	   	<form action="login_aluno.php" method="post">
+		  <div id="form-title"><span class="text-uppercase">Aluno</span></div> 
+		  <div id="form-body">
+			<div class="line-form"> 
+				<label for="matricula">Matrícula</label>
+				<input id="matricula" name="usernameAluno" placeholder="" onkeyup="javascript:somente_numero(this);" maxlength="10" type="text" required>
+			</div>
+			<div class="line-form">
+				<label for="senha">Senha</label>
+				<input id="senha" name="passwordAluno" type="password" required>
+			</div>
+			<div class="line-form">
+				<label for="captcha">Some: 11 + 20 = </label>
+				<input id="captcha" name="captcha" id="captcha" maxlength="2" size="2" onkeyup="javascript:somente_numero(this);" type="text" required>
 				<input name="validarcaptcha" id="captcha" maxlength="2" value="31" size="2" type="hidden">
-				<input value="Enviar" type="submit">
-			   </td>
-			 </tr>
-			 <tr>
-			   <td></td>
-			   <td><a href="https://www.uezo.rj.gov.br/aluno/msg_esqueci_a_senha.php" style="font-size:8pt"> Esqueci a senha!</a></td>
-			 </tr>
-			</tbody>
+			</div>
+			<div class="line-form">
+				<input class="button" value="Enviar" type="submit">
+			</div>
+			<div class="line-form">
+				<a href="https://www.uezo.rj.gov.br/aluno/msg_esqueci_a_senha.php" style="font-size:8pt"> Esqueci a senha!</a>
+			</div>
+		  </div>
 		</form>
-		</table>
 	   </div>
+	   <div class="col-sm-4"></div>
+	  </div>
 	</section>
 </body>
 </html>
