@@ -5,23 +5,22 @@ body{
     background-color: #ddd;
 }
 
-/*********************************** HEADER ***/
-header#header-principal{
-    height: 120px;
+/*********************************** NAV ***/
+nav#nav-superior{
     background-color: #fff;
 }
-.header-column{
-    width: 48vw;
-    float: left;
-    padding: 10px 0px;
+#logo-wtext{
+	width:465px;
 }
-.logo-header{
-    width: 110px;
+#logo-wtext img{
     float: left;
+	display: inline-block;
 }
-.text-header{
-    width: 330px;
-    float: left;
+#logo-wtext div{
+	padding: 15px;
+}
+#div-pad{
+	padding: 5px;
 }
 
 /*********************************** FORM ***/
