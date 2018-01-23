@@ -12,21 +12,17 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	
 	<script src="js/js-modifications.js"></script>
+	<script src="https://use.fontawesome.com/9d67606359.js"></script>
 </head>
 <body> <!--oncontextmenu="return false" onselectstart="return false" ondragstart="return false"-->
 	<header id="nav-superior">
 	  <div class="container">
 		<div class="col-md-6 text-center" id="logo-wtext">
-			<img alt="Governo do Estado do Rio de Janeiro" src="images/logo_gov_img.jpg" height="80px">
-			<div>
-				Governo do Estado do Rio de Janeiro <br />
-				Secretaria de Estado de Ciência e Tecnologia<br />
-				Centro Universitário Estadual da Zona Oeste - UEZO
-			</div>
+			<img alt="Governo do Estado do Rio de Janeiro" src="images/logo-uezo.png">
 		</div>
 
-		<div class="col-md-6 text-center" id="div-pad">
-			<img alt="Centro Universitário Estadual da Zona Oeste" src="images/logo_uezo.jpg" height="80px">
+		<div class="col-md-6 text-center text-uppercase" id="div-pad">
+			<i class="fa fa-undo"></i> <a href="http://www.uezo.rj.gov.br"> WEBSITE DA UEZO</a>
 		</div>
 	  </div>
 	</header>
@@ -36,15 +32,13 @@
 	   <div class="col-sm-4"></div>
 	   <div class="col-sm-4" id="form-space">
 	   	<form action="login_aluno.php" method="post">
-		  <div id="form-title"><span class="text-uppercase">Aluno</span></div> 
+		  <div id="form-title" class="text-uppercase">Aluno</div> 
 		  <div id="form-body">
 			<div class="line-form"> 
-				<label for="matricula">Matrícula</label>
-				<input id="matricula" name="usernameAluno" placeholder="" onkeyup="javascript:somente_numero(this);" maxlength="10" type="text" required>
+				<input id="matricula" name="usernameAluno" placeholder="&#xf007; Matricula" onkeyup="javascript:somente_numero(this);" maxlength="10" type="text" required>
 			</div>
 			<div class="line-form">
-				<label for="senha">Senha</label>
-				<input id="senha" name="passwordAluno" type="password" required>
+				<input id="senha" name="passwordAluno" placeholder="&#xf023; Senha" type="password" required>
 			</div>
 			<div class="line-form">
 				<label for="captcha">Some: 11 + 20 = </label>
@@ -52,10 +46,10 @@
 				<input name="validarcaptcha" id="captcha" maxlength="2" value="31" size="2" type="hidden">
 			</div>
 			<div class="line-form">
-				<input class="button" value="Enviar" type="submit">
+				<input class="button" value="Login" type="submit">
 			</div>
 			<div class="line-form">
-				<a href="https://www.uezo.rj.gov.br/aluno/msg_esqueci_a_senha.php" style="font-size:8pt"> Esqueci a senha!</a>
+				<a href="https://www.uezo.rj.gov.br/aluno/msg_esqueci_a_senha.php"> Esqueci a senha!</a>
 			</div>
 		  </div>
 		</form>
