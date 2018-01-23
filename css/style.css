@@ -6,11 +6,10 @@ body{
 }
 
 /*********************************** NAV ***/
-nav#nav-superior{
+header{
     background-color: #fff;
 }
 #logo-wtext{
-	width:465px;
 }
 #logo-wtext img{
     float: left;
