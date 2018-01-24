@@ -42,10 +42,6 @@ header{
 }
 
 /*********************************** AREA DO FORMULÁRIO ***/
-.main-div{
-    padding-top: 5vw;
-	min-height: 90vh;
-}
 #form-space{
 	padding: 0px 0px;
 	margin:15px 0px;
@@ -70,6 +66,9 @@ header{
 
 	min-height: 50px;
 }
+#form-body .line-form label{
+	color: #a9a9a9;
+}
 #form-body .line-form input{
 	font-family:Helvetica, FontAwesome;
 	width: 100%;
@@ -78,10 +77,14 @@ header{
 	padding: 0px 5px;
 	font-size: 22px;
     letter-spacing: 1px;
+	text-align: center;
 }
 /*********************************** FORM TEST ***/
-input:focus { outline: none; }
-
+input:focus { 
+	outline: none;
+	border: 2px #0066a6 solid;
+	background-color: #f2f2f2;
+}
 .button {
   position: relative;
   display: inline-block;
@@ -109,14 +112,14 @@ input:focus { outline: none; }
 	border-bottom: 3px solid #0066a6;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #a6a6a6;
+  color: #a9a9a9;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  color: #a6a6a6;
+  color: #a9a9a9;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  color: #a6a6a6;
+  color: #a9a9a9;
 }
 :-moz-placeholder { /* Firefox 18- */
-  color: #a6a6a6;
+  color: #a9a9a9;
 }
