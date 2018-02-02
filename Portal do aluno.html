@@ -35,15 +35,29 @@
 		  <div id="form-title" class="text-uppercase">Aluno</div> 
 		  <div id="form-body">
 			<div class="line-form"> 
-				<input id="matricula" name="usernameAluno" placeholder="&#xf007; Matricula" onkeyup="javascript:somente_numero(this);" maxlength="10" type="text" required>
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="matricula" name="usernameAluno" onkeyup="javascript:somente_numero(this);" maxlength="10" type="text" required />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+						<span class="input__label-content input__label-content--hoshi">Matricula</span>
+					</label>
+				</span>
 			</div>
 			<div class="line-form">
-				<input id="senha" name="passwordAluno" placeholder="&#xf023; Senha" type="password" required>
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="senha" name="passwordAluno" type="text" id="input-4" required />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+						<span class="input__label-content input__label-content--hoshi">Senha</span>
+					</label>
+				</span>
 			</div>
 			<div class="line-form">
-				<label for="captcha">Some: 11 + 20 = </label>
-				<input id="captcha" name="captcha" id="captcha" maxlength="2" size="2" onkeyup="javascript:somente_numero(this);" type="text" required>
-				<input name="validarcaptcha" id="captcha" maxlength="2" value="31" size="2" type="hidden">
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="captcha" name="captcha" maxlength="2" size="2" onkeyup="javascript:somente_numero(this);" type="text" id="input-4" required />
+					<!--<input name="validarcaptcha" id="captcha" maxlength="2" value="31" size="2" type="hidden">-->
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+						<span class="input__label-content input__label-content--hoshi">Some: 11 + 20 = </span>
+					</label>
+				</span>
 			</div>
 			<div class="line-form">
 				<input class="button" value="Login" type="submit">
