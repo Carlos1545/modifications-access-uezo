@@ -7,6 +7,7 @@
 
 body{
     font-family: "Helvetica", Sans-Serif;
+	color: #fff;
     padding: 0px;
     margin: 0px;
 	
@@ -123,3 +124,54 @@ input:focus {
 :-moz-placeholder { /* Firefox 18- */
   color: #a9a9a9;
 }
+/*********************************** INSIDE UEZO PORTAL ***/
+div.menu-uezo-title{
+	height: 50px;
+    background-color: #fff;
+    padding: 10px 30px;
+    font-size: 21px;
+}
+ul.menu-uezo{
+	list-style-type: none;
+	padding-left:0px;
+}
+ul.menu-uezo li{
+	min-height: 50px;
+	background-color: #0066a6;
+	border-left: 4px #005488 solid;
+	-webkit-transition: border-left 0.5s, background-color 0.5s; /* Safari */
+    transition: border-left 0.5s, background-color 0.5s;
+}
+ul.menu-uezo li a div{
+	display: inline-block;
+    width: 40px;
+    padding: 0px 5px;
+}
+ul.menu-uezo li a{
+	text-decoration: none;
+	color: #fff;
+	font-size:17px;
+	display: block;
+	padding: 15px 15px;
+	min-height: 50px;
+    width: 100%;
+}
+ul.menu-uezo li:hover{
+	background-color: #357bd8;
+	border-left: 15px #005488 solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
