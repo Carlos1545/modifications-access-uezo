@@ -125,8 +125,23 @@ input:focus {
   color: #a9a9a9;
 }
 /*********************************** INSIDE UEZO PORTAL ***/
+#navigation-info{
+	background-color: #fff;
+	margin: 15px;
+	min-height: 30px;
+	line-height: 30px;
+	
+	-webkit-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
+    -moz-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
+}
+div.box-menu{
+	-webkit-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
+    -moz-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
+}
 div.menu-uezo-title{
-	height: 50px;
+	min-height: 50px;
     background-color: #fff;
     padding: 10px 30px;
     font-size: 21px;
@@ -136,8 +151,9 @@ ul.menu-uezo{
 	padding-left:0px;
 }
 ul.menu-uezo li{
+	position: relative;
 	min-height: 50px;
-	background-color: #0066a6;
+	background-color: #3a539b;
 	border-left: 4px #005488 solid;
 	-webkit-transition: border-left 0.5s, background-color 0.5s; /* Safari */
     transition: border-left 0.5s, background-color 0.5s;
@@ -159,6 +175,11 @@ ul.menu-uezo li a{
 ul.menu-uezo li:hover{
 	background-color: #357bd8;
 	border-left: 15px #005488 solid;
+}
+.new-alert{
+	position: absolute;
+    right: 20px;
+    top: 22px;
 }
 
 
