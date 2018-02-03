@@ -1,259 +1,160 @@
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=windows-1252"><script type="text/javascript">
-//   <![CDATA[
-
-<!--  alert('ATENÇÃO, \n Prezados Alunos de TADS e CC, \n Precisamos "sensibilizar" o Governo para que deem posse aos professores que passaram em concurso público para a UEZO, especialmente, o candidato aprovado para lecionar essas disciplinas. O concurso aconteceu em fevereiro/2015, isso significa que 1 ano sem professor (desde a aprovação do candidato). \n Caso você ainda não tenha cursado pelo menos uma das disciplinas abaixo, por favor, envie um e-mail para ucomp@uezo.rj.gov.b contendo nome completo, número de matrícula e nome da(s) disciplina(s).  \n Seguem as disciplinas: \n Controle e Administração de Projetos – CCB1023 (4o período de CC); \n Gerência e Controle de Projetos – INF1015 (3o período de TADS); \n Propriedade Intelectual, Direito e Ética - INF1039 (6o período de TADS e 8o período de CC); e \n Empreendedorismo - INF1042 (6o período de TADS e 8o período de CC) \n Conto com a ajuda de todos!' );
--->
-
-<!-- alert('Prezados alunos, \n \n O processo de rematrícula (inscrição em disciplinas) está mais autônomo. Este processo de automatização verifica a sobreposição de horário e requisitos. Caso não respeite essas questões, a sua solicitação não será aceita. \n Corrija as suas opções para que não hajam tais problemas. \n\n Após a matrícula/rematrícula ainda haverá a avaliação dos diretores das Unidades, para o caso de alguma turma ter mais alunos do que pode permitir, por diferentes motivos, como por exemplo, espaço em sala de aula. Neste caso são usados critérios como CR e antiguidade no curso. \n\nInscrições em disciplinas de outros cursos serão feitas por requerimento on line, desta vez. \n Por favor, fiquem atentos para qualquer irregularidade diferente das mencionadas acima e reporte imediatamente através do email sistemaacademico@uezo.rj.gov.br, informando:  nome completo, matricula e curso. \nObrigada! ' );
-
-
-//   ]]> 
-</script>
-</head><body ondragstart="return false" onselectstart="return false" oncontextmenu="return false" text="#000000" bgcolor="#FFFFFF">matr - 1423331068
- data - 26/08/2017
-
-<title>Portal UEZO - Portal do aluno</title>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
-
-
- 
-
-ï»¿
-
-<br>
-<img style="position:absolute;top:35px;left:10px;height:100px" alt="Governo do Estado do Rio de Janeiro" src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/logo_gov_img.jpg">
-<p style="position:absolute;top:55px;left:100px;">Governo do Estado do Rio de Janeiro</p>
-<p style="position:absolute;top:70px;left:100px;">Secretaria de Estado de CiÃªncia e Tecnologia</p>
-<p style="position:absolute;top:85px;left:100px;">Centro UniversitÃ¡rio Estadual da Zona Oeste - UEZO	</p>
-
-<img style="position:absolute;top:50px;left:500px;width:250px;height:80px;" alt="Centro UniversitÃ¡rio Estadual da Zona Oeste" src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/logo_uezo.jpg">
-
-<hr style="position:relative;top:130px;">
-<br><br><br><br><br><br><br> 
-
-
-
-
-
-<table align="center">
-<tbody><tr>
-<td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://www.uezo.rj.gov.br/aluno/altera_senha.php">Alterar senha</a></td>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://www.uezo.rj.gov.br/aluno/log_out_aluno.php">Sair</a></td><td>
-</td></tr>
-</tbody></table>
-<br><br><br> 
-
-   <div id="ladoesquerdo" style="width:50%; float:left;">          
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Portal UEZO - Portal do aluno</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
 	
-			<div name="aluno">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	
+	<script src="js/js-modifications.js"></script>
+	<script src="https://use.fontawesome.com/9d67606359.js"></script>
+	<script type="text/javascript">
+	//   <![CDATA[
 
-			<img id="aluno_fig" src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/_mais.gif" onclick="visibilidade('aluno');">&nbsp;ALUNO
-            <ul>	
-                         
-			
+	<!--  alert('ATENÇÃO, \n Prezados Alunos de TADS e CC, \n Precisamos "sensibilizar" o Governo para que deem posse aos professores que passaram em concurso público para a UEZO, especialmente, o candidato aprovado para lecionar essas disciplinas. O concurso aconteceu em fevereiro/2015, isso significa que 1 ano sem professor (desde a aprovação do candidato). \n Caso você ainda não tenha cursado pelo menos uma das disciplinas abaixo, por favor, envie um e-mail para ucomp@uezo.rj.gov.b contendo nome completo, número de matrícula e nome da(s) disciplina(s).  \n Seguem as disciplinas: \n Controle e Administração de Projetos – CCB1023 (4o período de CC); \n Gerência e Controle de Projetos – INF1015 (3o período de TADS); \n Propriedade Intelectual, Direito e Ética - INF1039 (6o período de TADS e 8o período de CC); e \n Empreendedorismo - INF1042 (6o período de TADS e 8o período de CC) \n Conto com a ajuda de todos!' );
+	-->
 
-			<li><a href="https://www.uezo.rj.gov.br/aluno/boletim_aluno_b.php">Consultar Notas</a></li>
-			<!-- <li><a href="./boletim_aluno_uezo.php">Consultar Notas</a></li>  --> 
-
-			<li><a href="https://www.uezo.rj.gov.br/aluno/imprime_historico.php">Histórico Escolar</a></li>
-
-			<li><a href="https://www.uezo.rj.gov.br/aluno/CR.pdf">Saiba como o CR é calculado!</a></li>
-			<li><a href="https://www.uezo.rj.gov.br/aluno/CARTILHA-DO-ALUNO-UEZO-2015.pdf"> CARTILHA DO ALUNO! </a> <img src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/novo.gif"> </li>
-			
-			<li><a href="https://www.uezo.rj.gov.br/requerimento/form_inserir_requerimento.php">Fazer Requerimento </a> </li>
-			<li><a href="https://www.uezo.rj.gov.br/requerimento/exibir_requerimeto_aluno.php">Meus Requerimentos</a> </li>
-            
-			 <li><a href="https://www.uezo.rj.gov.br/aluno/requerimento-de-isencao-de-disciplinas.xlsx"> Formulário dse Requerimento de isenção de disciplinas.xlsx </a> <img src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/novo.gif"> </li>
-
-           <!-- <li><a href="requerimento-de-ISENCAO-de-disciplinas-transferencia-interna.xlsx"> Formulário de isenção de disciplina </a> <img  src="../imagem/novo.gif" /> </li> -->
-			<li><a href="https://www.uezo.rj.gov.br/aluno/ajuda/ajuda_requerimento/">Ajuda para Requerimentos</a> <img src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/novo.gif"> </li> 
-			<li><a href="https://www.uezo.rj.gov.br/aluno/Deliberacao_COEPE%20014-2013_alunos_com_falta_em_todas_asdisciplinas.pdf"> Deliberação COEPE 014-2013 - Alunos com falta em todas as disciplinas </a> </li>  
-			<li><a href="http://goo.gl/forms/QuRdeQRBLR">Inscrição do processo seletivo para benefício de alimentação</a>  </li> 
-
-			<!-- <li> <a href='https://docs.google.com/forms/d/1E2zQ_JdAT7EAfk0X31te83A1FIEc2clm5fGKrV-Kiio/viewform'>Formulário  Discente (CPA) </a></li> -->
-
-			<!--<li><blink> <a href='https://docs.google.com/forms/d/1E2zQ_JdAT7EAfk0X31te83A1FIEc2clm5fGKrV-Kiio/viewform'> Formulário  Discente (CPA) <font color='DarkOrange'>Participe!!!! </font>  </a> </blink></li>-->
-
-			
-				<!--<li><a href="horariosdocursodeverao-jan_fev2014.pdf"><font color='DarkOrange'>Horários do Curso de Verão  </a>( OBS: Inscrições através de Fazer Requerimento, na opção CURSO DE VERÃO )  </font></li>-->
-				<!-- <li><a href="cursodeverao.php"> <font color='DarkOrange'> CURSO DE VERÃO    </font></a> </li> -->
-				<!--
-				<li><a href="../requerimento/form_inserir_requerimento.php">Fazer Requerimento </a> </li>
-				<li><a href="../requerimento/exibir_requerimeto_aluno.php">Meus Requerimentos</a> </li>
-
-							 -->
+	<!-- alert('Prezados alunos, \n \n O processo de rematrícula (inscrição em disciplinas) está mais autônomo. Este processo de automatização verifica a sobreposição de horário e requisitos. Caso não respeite essas questões, a sua solicitação não será aceita. \n Corrija as suas opções para que não hajam tais problemas. \n\n Após a matrícula/rematrícula ainda haverá a avaliação dos diretores das Unidades, para o caso de alguma turma ter mais alunos do que pode permitir, por diferentes motivos, como por exemplo, espaço em sala de aula. Neste caso são usados critérios como CR e antiguidade no curso. \n\nInscrições em disciplinas de outros cursos serão feitas por requerimento on line, desta vez. \n Por favor, fiquem atentos para qualquer irregularidade diferente das mencionadas acima e reporte imediatamente através do email sistemaacademico@uezo.rj.gov.br, informando:  nome completo, matricula e curso. \nObrigada! ' );
 
 
+	//   ]]> 
+	</script>
+</head>
+<body> <!-- ondragstart="return false" onselectstart="return false" oncontextmenu="return false" text="#000000" bgcolor="#FFFFFF">--> 
+<header id="nav-superior" style="background-color: #3a539b;">
+	<div class="container">
+		<div class="col-md-6" id="logo-wtext">
+		  <img alt="Governo do Estado do Rio de Janeiro" src="images/logo-uezo.png">
+		</div>
 
-					<!--mensagem ao aluno-->
-					<!--
-					<li><a style="font-weight: bold;" class="frase" href="http://uezo.rj.gov.br/" target="_blank" onclick="window.open(this.href, this.target, 'width=754,height=479'); return false;"> <font color='DarkOrange'> Oportunidade de Estágio TPM </font> </a> </li>
-					-->
-					<script> 
-					function abrir() { 
-					//window.open('mensagemal.php','','toolbar=1, location=0, status=0, menubar=0, scrollbars=0, directories=0, resizable=1, width=620, height=400'); 
-					window.open('mensagemal.php','','toolbar=1, location=0, status=0, menubar=0, scrollbars=0, directories=0, resizable=1, width=800, height=600'); 
-					window.blur(); 
-					window.focus(); 
-					} 
-					</script> 
-					<script>abrir()</script>
-
-					<!--  FIM    mensagem ao aluno-    -->
-
-
-							<li><a href="http://www.uezo.rj.gov.br/prograd/index.htm"> Documentos da PROGRAD </a> </li>
-			<!--<li><a href="http://www.uezo.rj.gov.br/prograd/documentos/documentos.html"> Documentos da PROGRAD </a> </li>-->
-			<li><a href="https://docs.google.com/forms/d/1zowXC_Qddnf6em0GNYldbzVI4igb4Pwl0jynYQawqq4/viewform" target="_blank"> Avaliação Socioeconômica  e Pedagógica UEZO </a> </li>
-			<!-- <li><a href="https://docs.google.com/forms/d/1ysmmhhkB6QzCqpnSrRkNt6fjvuqlTaLWZ39NnQdtEUI/viewform?usp=send_form"> AVALIAÇÃO DOCENTE 2014  </a> </li>  -->
-			</ul>
-			</div> <!--fim div aluno -->
-		<br><br>
-		
-		
-
-				
-					<div name="matricula">
-
-						
-						<img id="aluno_fig" src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/_mais.gif" onclick="visibilidade('aluno');">&nbsp;PRÉ MATRÍCULA -  2017 / 1						<ul>
-						<!-- <font color='DarkOrange'>Atenção!!! Informações referentes à equivalência de disciplinas nas coordenações dos cursos.</font> -->
-						<!-- <li><a href="../rematricula/aluno/aluno.php">Montar Grade</a></li> -->
-						<!-- <li><a href="ajuda/montagem_grade.html">Ajuda para Montar Grade</a></li> -->
-						<li><a href="https://www.uezo.rj.gov.br/montagem_grade/">Montagem de Grade</a></li> 						 </ul>
-							
-
-					<br><br><br>
-					</div> <!-- fim div rematricula -->
-		
-<!-- ---------------------------------------------------------------------------------------------------------------------------------------------- -->		
-		
-		
-								<!-- div matriz curricular -->
-								
-								<div name="matriz">
-								<!--<div name='matriz'style="position:absolute;top:560px;left:30px;"  >  -->
-								<img id="aluno_fig" src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/_mais.gif" onclick="visibilidade('aluno');">&nbsp;MATRIZ CURRICULAR (TODOS OS CURSOS)
-								<ul>
-								<!--<li><a href="matriz_cirricular.php">Matriz Curricular </a></li>-->
-								 <li> &nbsp;&nbsp;&nbsp; <a href="http://www.uezo.rj.gov.br/prograd/graduacao.html" target="_blank">Matriz Curricular </a></li>
-								 </ul>
-								</div> <!-- fim  div matriz curricular  -->
+		<div class="col-md-6 text-right" id="div-pad">
+		  <i class="fa fa-undo"></i> <a href="http://www.uezo.rj.gov.br"> Website da Uezo</a>
+		</div>
+	</div>
+</header>
 
 
+<div class="wrapper" style="background-color: #cecece;">
+<section class="container">
+  <div id="navigation-info">
+	<div class="col-md-6">
+		Matricula - 1423331068 --- data - 26/08/2017
+	</div>
+	<div class="col-md-6 text-right">
+		<a href="https://www.uezo.rj.gov.br/aluno/altera_senha.php">Alterar senha</a> --- 
+		<a href="https://www.uezo.rj.gov.br/aluno/log_out_aluno.php">Sair</a>
+	</div>
+  </div>
+</section>
 
-								
-                                </div>	<!-- fim div ladoesquerdo -->	
-
- <!-- fin div div ladoesquerdo --> 								
+<section class="container">
+   <div id="ladoesquerdo" class="col-md-6">          
+	 <div id="aluno" class="box-menu">
+		<div class="menu-uezo-title"> 
+		  ALUNO
+		</div>
+        <ul class="menu-uezo">	
+		  <li><a href="https://www.uezo.rj.gov.br/aluno/boletim_aluno_b.php"><div class="icon-space"><i class="fa fa-clipboard"></i></div> Consultar Notas</a></li>
+		  <li><a href="https://www.uezo.rj.gov.br/aluno/imprime_historico.php"><div class="icon-space"><i class="fa fa-history"></i></div> Histórico Escolar</a></li>
+		  <li><a href="https://www.uezo.rj.gov.br/aluno/CR.pdf"><div class="icon-space"><i class="fa fa-calculator"></i></div> Saiba como o CR é calculado!</a></li>
+		  <li><a href="https://www.uezo.rj.gov.br/aluno/CARTILHA-DO-ALUNO-UEZO-2015.pdf"><div class="icon-space"><i class="fa fa-id-badge"></i></div> CARTILHA DO ALUNO! </a> <img src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/novo.gif" class="new-alert"> </li>
+		  <li><a href="https://www.uezo.rj.gov.br/requerimento/form_inserir_requerimento.php"><div class="icon-space"><i class="fa fa-share-square"></i></div> Fazer Requerimento </a> </li>
+		  <li><a href="https://www.uezo.rj.gov.br/requerimento/exibir_requerimeto_aluno.php"><div class="icon-space"><i class="fa fa-list-alt"></i></div> Meus Requerimentos</a> </li>  
+		  <li><a href="https://www.uezo.rj.gov.br/aluno/requerimento-de-isencao-de-disciplinas.xlsx"><div class="icon-space"><i class="fa fa-times-circle"></i></div> Formulário dse Requerimento de isenção de <br />disciplinas.xlsx </a> <img src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/novo.gif" class="new-alert"> </li>
+          <!-- <li><a href="requerimento-de-ISENCAO-de-disciplinas-transferencia-interna.xlsx"> Formulário de isenção de disciplina </a> <img  src="../imagem/novo.gif" /> </li> -->
+		  <li><a href="https://www.uezo.rj.gov.br/aluno/ajuda/ajuda_requerimento/"><div class="icon-space"><i class="fa fa-question"></i></div> Ajuda para Requerimentos</a> <img src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/novo.gif" class="new-alert"> </li> 
+		  <li><a href="https://www.uezo.rj.gov.br/aluno/Deliberacao_COEPE%20014-2013_alunos_com_falta_em_todas_asdisciplinas.pdf"><div class="icon-space"><i class="fa fa-gavel"></i></div> Deliberação COEPE 014-2013 - Alunos com falta em todas as disciplinas </a> </li>  
+		  <li><a href="http://goo.gl/forms/QuRdeQRBLR"><div class="icon-space"><i class="fa fa-coffee"></i></div> Inscrição do processo seletivo para benefício de <br /> alimentação</a>  </li> 
+		  <!-- <li> <a href='https://docs.google.com/forms/d/1E2zQ_JdAT7EAfk0X31te83A1FIEc2clm5fGKrV-Kiio/viewform'>Formulário  Discente (CPA) </a></li> -->
+		  <!--<li><blink> <a href='https://docs.google.com/forms/d/1E2zQ_JdAT7EAfk0X31te83A1FIEc2clm5fGKrV-Kiio/viewform'> Formulário  Discente (CPA) <font color='DarkOrange'>Participe!!!! </font>  </a> </blink></li>-->
+		  <!--<li><a href="horariosdocursodeverao-jan_fev2014.pdf"><font color='DarkOrange'>Horários do Curso de Verão  </a>( OBS: Inscrições através de Fazer Requerimento, na opção CURSO DE VERÃO )  </font></li>-->
+		  <!-- <li><a href="cursodeverao.php"> <font color='DarkOrange'> CURSO DE VERÃO    </font></a> </li> -->
+		  <!--
+		  <li><a href="../requerimento/form_inserir_requerimento.php">Fazer Requerimento </a> </li>
+		  <li><a href="../requerimento/exibir_requerimeto_aluno.php">Meus Requerimentos</a> </li>
+		  -->
+		  <!--mensagem ao aluno-->
+		  <!--
+		  <li><a style="font-weight: bold;" class="frase" href="http://uezo.rj.gov.br/" target="_blank" onclick="window.open(this.href, this.target, 'width=754,height=479'); return false;"> <font color='DarkOrange'> Oportunidade de Estágio TPM </font> </a> </li>
+		  -->
+		  <script> 
+		  function abrir() { 
+		  //window.open('mensagemal.php','','toolbar=1, location=0, status=0, menubar=0, scrollbars=0, directories=0, resizable=1, width=620, height=400'); 
+		  window.open('mensagemal.php','','toolbar=1, location=0, status=0, menubar=0, scrollbars=0, directories=0, resizable=1, width=800, height=600'); 
+		  window.blur(); 
+		  window.focus(); 
+		  } 
+		  </script> 
+		  <script>abrir()</script>
+		  <!--  FIM    mensagem ao aluno-    -->
+		  <li><a href="http://www.uezo.rj.gov.br/prograd/index.htm"><div class="icon-space"><i class="fa fa-file"></i></div> Documentos da PROGRAD </a> </li>
+		  <!--<li><a href="http://www.uezo.rj.gov.br/prograd/documentos/documentos.html"> Documentos da PROGRAD </a> </li>-->
+		  <li><a href="https://docs.google.com/forms/d/1zowXC_Qddnf6em0GNYldbzVI4igb4Pwl0jynYQawqq4/viewform" target="_blank"><div class="icon-space"><i class="fa fa-exclamation-triangle"></i></div> Avaliação Socioeconômica  e Pedagógica UEZO </a> </li>
+		  <!-- <li><a href="https://docs.google.com/forms/d/1ysmmhhkB6QzCqpnSrRkNt6fjvuqlTaLWZ39NnQdtEUI/viewform?usp=send_form"> AVALIAÇÃO DOCENTE 2014  </a> </li>  -->
+		</ul>
+	 </div> <!--fim div aluno -->
+   </div>	<!-- fim div ladoesquerdo -->
 
 <!----------------------------------------------aqui começa o lado direito ----------------------------------------------------------------- -->
 	
-	<div id="ladoedireiro" style="width:50%;float:left;">
-		
-		<!--div horario -->
-		
-		<div name="horario">
-		
-		<img id="aluno_fig" src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/_mais.gif" onclick="visibilidade('aluno');">&nbsp;QUADRO DE HORÁRIO DOS CURSOS -  2017 / 1        <br><br>
-		<li> &nbsp;&nbsp;&nbsp; <a href="https://www.uezo.rj.gov.br/aluno/quadrodehorario.php">ACESSAR </a></li>
-        
-		<br><br>
-		<br><br>
-		
-		
-		</div> 
-		
-		<!--div horario -->
-	
-		
-		
-		
-
-		
-<!--  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->		
+   <div id="ladoedireiro" class="col-md-6">
+     <div id="matricula" class="box-menu">
+		<div class="menu-uezo-title"> 
+		  PRÉ MATRÍCULA -  2017 / 1
+		</div>
+		<ul class="menu-uezo">
+		  <!-- <font color='DarkOrange'>Atenção!!! Informações referentes à equivalência de disciplinas nas coordenações dos cursos.</font> -->
+		  <!-- <li><a href="../rematricula/aluno/aluno.php">Montar Grade</a></li> -->
+		  <!-- <li><a href="ajuda/montagem_grade.html">Ajuda para Montar Grade</a></li> -->
+		  <li><a href="https://www.uezo.rj.gov.br/montagem_grade/"><div class="icon-space"><i class="fa fa-graduation-cap"></i></div> Montagem de Grade</a></li> 						 
+		</ul>
+	 </div> <!-- fim div rematricula -->
+								
+	 <div id="matriz" class="box-menu">
+		<div class="menu-uezo-title"> 
+		  MATRIZ CURRICULAR (TODOS OS CURSOS)
+		</div>
+		<ul class="menu-uezo">
+		  <!--<li><a href="matriz_cirricular.php">Matriz Curricular </a></li>-->
+		  <li><a href="http://www.uezo.rj.gov.br/prograd/graduacao.html" target="_blank"><div class="icon-space"><i class="fa fa-table"></i></div> Matriz Curricular </a></li>
+		</ul>
+	 </div> <!-- fim  div matriz curricular  -->
+	 <div id="horario" class="box-menu">
+		<div class="menu-uezo-title"> 
+		  QUADRO DE HORÁRIO DOS CURSOS -  2017/1
+		</div>
+		<ul class="menu-uezo">
+		  <li><a href="https://www.uezo.rj.gov.br/aluno/quadrodehorario.php"><div class="icon-space"><i class="fa fa-book"></i></div> ACESSAR </a></li>
+		</ul>
+	 </div> 	
             
-		<div name="reavaliacao">
-		<img id="aluno_fig" src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/_mais.gif" onclick="visibilidade('aluno');">&nbsp;REAVALIAÇÃO/COTA
-         <br><br>
-		<!-- <li><a href="http://uezo.rj.gov.br/prograd/assistencia-estudantil.html"> Reavaliação de Cotista  - &nbsp;&nbsp <font color='DarkOrange'> Última chamada!!!!!! </font>&nbsp;&nbsp;  </a><font color='DarkOrange'> &nbsp;&nbsp;&nbsp;Obrigatório para todos cotistas </font>  <img  src="../imagem/novo.gif" /> </li> -->
-		<!-- <li><a href="frequencia_bolsista_compacto.pdf"> Ficha de frequência (somente para bolsistas). &nbsp;&nbsp;  </a><font color='DarkOrange'> &nbsp;&nbsp;&nbsp;Obrigatório para todos cotistas </font>  <img  src="../imagem/novo.gif" /> </li> -->
-		<li> &nbsp;&nbsp;&nbsp;<a href="http://www.uezo.rj.gov.br/prograd/coaapd/docs/FICHA%20DE%20FREQU%C3%8ANCIA%20COTISTA%20NOVA%202016.pdf"> Ficha de frequência (somente para bolsistas). &nbsp;&nbsp;  </a><font color="DarkOrange"> &nbsp;&nbsp;&nbsp;Obrigatório para todos cotistas </font>  <img src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/novo.gif"> </li> 
-		
-		<br><br>
-		<br><br>
-		</div> <!--reavaliacao -->
-		
-		
-		<!--  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->		
-          		
-		
-		
-			
-<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+	 <div id="reavaliacao" class="box-menu">
+		<div class="menu-uezo-title"> 
+		  REAVALIAÇÃO/COTA
+		</div>
+		<ul class="menu-uezo">
+		  <!-- <li><a href="http://uezo.rj.gov.br/prograd/assistencia-estudantil.html"> Reavaliação de Cotista  - &nbsp;&nbsp <font color='DarkOrange'> Última chamada!!!!!! </font>&nbsp;&nbsp;  </a><font color='DarkOrange'> &nbsp;&nbsp;&nbsp;Obrigatório para todos cotistas </font>  <img  src="../imagem/novo.gif" /> </li> -->
+		  <!-- <li><a href="frequencia_bolsista_compacto.pdf"> Ficha de frequência (somente para bolsistas). &nbsp;&nbsp;  </a><font color='DarkOrange'> &nbsp;&nbsp;&nbsp;Obrigatório para todos cotistas </font>  <img  src="../imagem/novo.gif" /> </li> -->
+		  <li><a href="http://www.uezo.rj.gov.br/prograd/coaapd/docs/FICHA%20DE%20FREQU%C3%8ANCIA%20COTISTA%20NOVA%202016.pdf"><div class="icon-space"><i class="fa fa-bullhorn"></i></div> Ficha de frequência (Obrigatório para todos cotistas)</a>   <img src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/novo.gif" class="new-alert"> </li> 
+		</ul>
+	 </div>	
 
-	<div name="importante">
-	<img id="aluno_fig" src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/_mais.gif" onclick="visibilidade('aluno');">&nbsp;<font color="orange">INFORMAÇÕES IMPORTANTES</font>
-	<br><br>
-	<li> &nbsp;&nbsp;&nbsp; <a href="" target="_blank" onclick="abrir()">&nbsp;Últimas Informações&nbsp;&nbsp;</a><img src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/novo.gif"></li>
-	<li> &nbsp;&nbsp;&nbsp; <a href="http://www.uezo.rj.gov.br/prograd/secad/calendarios-academicos.html" target="_blank">&nbsp;Calendários Acadêmicos&nbsp;&nbsp;</a><img src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/novo.gif"></li>
-	<li> &nbsp;&nbsp;&nbsp; <a href="https://www.uezo.rj.gov.br/aluno/Oficio_Rio_Card.pdf" target="_blank">&nbsp; Ofício enviado pela Rio Card &nbsp;&nbsp;</a><img src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/novo.gif"></li>
+	<div id="importante" class="box-menu">
+		<div class="menu-uezo-title"> 
+		  INFORMAÇÕES IMPORTANTES
+		</div>
+		<ul class="menu-uezo">
+		  <li><a href="" target="_blank" onclick="abrir()"><div class="icon-space"><i class="fa fa-info"></i></div> Últimas Informações</a><img src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/novo.gif" class="new-alert"></li>
+		  <li><a href="http://www.uezo.rj.gov.br/prograd/secad/calendarios-academicos.html" target="_blank"><div class="icon-space"><i class="fa fa-calendar"></i></div> Calendários Acadêmicos</a><img src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/novo.gif" class="new-alert"></li>
+		  <li><a href="https://www.uezo.rj.gov.br/aluno/Oficio_Rio_Card.pdf" target="_blank"><div class="icon-space"><i class="fa fa-address-card"></i></div> Ofício enviado pela Rio Card</a><img src="Portal%20UEZO%20-%20Portal%20do%20aluno_arquivos/novo.gif" class="new-alert"></li>
+		</ul>
+	</div>
 
-	
-	</div> <!--importante -->
-	<br><br><br><br>
+   </div> <!-- fim div ladoedireiro  -->
+</section> 
 
-<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->	
-			
-			
-			
-
-			
-
-<!--
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div name='jornada' >
-<ul><h3><font color='DarkOrange'> V JORNADA DE CIÊNCIA &TECNOLOGIA</font></h3>
-<li><a href="https://www.uezo.rj.gov.br/evento_tec/aluno/">Inscrição </a></li>
-<li><a href="https://www.uezo.rj.gov.br/evento_tec/aluno/imprimir_b.php">IMPRIMIR INSCRI&Ccedil;&Atilde;O RELIZADA</a></li>
-
-
-</ul>
-
-</div> 
--->
-<!--
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div name='curso_ferias' >
-<ul><h3><font color='DarkOrange'> CURSO DE FERIAS - PRÓ-REITORIA DE EXTENSÃO </font></h3>
--->
-<!--
-<li><a href="http://www.uezo.rj.gov.br/escola-extensao/">Inscrição </a></li> 
-<iframe src="https://docs.google.com/forms/d/1iTQ80ijWWHBRb3tMSzOo_Vq9YrC7U2k5ABF_SdnxEy4/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Carregando...</iframe>
--->
-<!-- <li><a href="https://docs.google.com/forms/d/1iTQ80ijWWHBRb3tMSzOo_Vq9YrC7U2k5ABF_SdnxEy4/viewform">Inscrição </a></li> -->
-
-<!--
-</ul>
-
-</div> 
--->
-
-</div> <!-- fim div ladoedireiro  -->
-
-
-
-
-
-
-
-</body></html>
+</div>
+</body>
+</html>

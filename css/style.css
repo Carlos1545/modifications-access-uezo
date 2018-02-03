@@ -7,6 +7,7 @@
 
 body{
     font-family: "Helvetica", Sans-Serif;
+	color: #fff;
     padding: 0px;
     margin: 0px;
 	
@@ -116,6 +117,7 @@ input:focus {
 :-moz-placeholder { /* Firefox 18- */
   color: #a9a9a9;
 }
+<<<<<<< HEAD
 
 /*** TESTE DO INPUT***/
 .input {
@@ -275,3 +277,77 @@ input:focus {
 		transform: translate3d(0, -40%, 0);
 	}
 }
+=======
+/*********************************** INSIDE UEZO PORTAL ***/
+#navigation-info{
+	background-color: #fff;
+	margin: 15px;
+	min-height: 30px;
+	line-height: 30px;
+	
+	-webkit-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
+    -moz-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
+}
+div.box-menu{
+	-webkit-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
+    -moz-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
+}
+div.menu-uezo-title{
+	min-height: 50px;
+    background-color: #fff;
+    padding: 10px 30px;
+    font-size: 21px;
+}
+ul.menu-uezo{
+	list-style-type: none;
+	padding-left:0px;
+}
+ul.menu-uezo li{
+	position: relative;
+	min-height: 50px;
+	background-color: #3a539b;
+	border-left: 4px #005488 solid;
+	-webkit-transition: border-left 0.5s, background-color 0.5s; /* Safari */
+    transition: border-left 0.5s, background-color 0.5s;
+}
+ul.menu-uezo li a div{
+	display: inline-block;
+    width: 40px;
+    padding: 0px 5px;
+}
+ul.menu-uezo li a{
+	text-decoration: none;
+	color: #fff;
+	font-size:17px;
+	display: block;
+	padding: 15px 15px;
+	min-height: 50px;
+    width: 100%;
+}
+ul.menu-uezo li:hover{
+	background-color: #357bd8;
+	border-left: 15px #005488 solid;
+}
+.new-alert{
+	position: absolute;
+    right: 20px;
+    top: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 92ab1eee4033fbc1061cdb4c8f3ff384cd4d632a
