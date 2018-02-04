@@ -65,7 +65,7 @@ header{
 #form-body .line-form label{
 	color: #a9a9a9;
 }
-#form-body .line-form input{
+#form-body .line-form .input__field{
 	height: 72px;
 	font-size: 25px;
 	
@@ -78,13 +78,12 @@ header{
 input:focus { 
 	outline: none;
 }
-
 .button {
   position: relative;
   display: inline-block;
   padding: 12px 24px;
-  margin: .3em 0 1em 0;
-  width: 100%;
+  margin: 1em;
+  width: calc(100% - 2em);
   vertical-align: middle;
   color: #fff;
   font-size: 16px;
@@ -105,6 +104,10 @@ input:focus {
 	background: #357bd8;
 	border-bottom: 3px solid #0066a6;
 }
+.forgot-password{
+	margin: 0.5em 1em;
+    display: inline-block;
+}
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #a9a9a9;
 }
@@ -117,14 +120,13 @@ input:focus {
 :-moz-placeholder { /* Firefox 18- */
   color: #a9a9a9;
 }
-<<<<<<< HEAD
 
-/*** TESTE DO INPUT***/
+/*********************************** INPUT EFFECTS***/
 .input {
 	position: relative;
 	z-index: 1;
 	display: inline-block;
-	margin: 1em;
+	margin: 0em 1em;
 	max-width: 350px;
 	width: calc(100% - 2em);
 	vertical-align: top;
@@ -277,7 +279,7 @@ input:focus {
 		transform: translate3d(0, -40%, 0);
 	}
 }
-=======
+
 /*********************************** INSIDE UEZO PORTAL ***/
 #navigation-info{
 	background-color: #fff;
@@ -347,7 +349,3 @@ ul.menu-uezo li:hover{
 
 
 
-
-
-
->>>>>>> 92ab1eee4033fbc1061cdb4c8f3ff384cd4d632a

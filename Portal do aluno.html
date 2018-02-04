@@ -11,7 +11,6 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
-	<script src="js/js-modifications.js"></script>
 	<script src="https://use.fontawesome.com/9d67606359.js"></script>
 </head>
 <body> <!--oncontextmenu="return false" onselectstart="return false" ondragstart="return false"-->
@@ -21,7 +20,7 @@
 			<img alt="Governo do Estado do Rio de Janeiro" src="images/logo-uezo.png">
 		</div>
 
-		<div class="col-md-6 text-right" id="div-pad">
+		<div class="col-md-6 text-center" id="div-pad">
 			<i class="fa fa-undo"></i> <a href="http://www.uezo.rj.gov.br"> Website da Uezo</a>
 		</div>
 	  </div>
@@ -44,7 +43,7 @@
 			</div>
 			<div class="line-form">
 				<span class="input input--hoshi">
-					<input class="input__field input__field--hoshi" id="senha" name="passwordAluno" type="text" id="input-4" required />
+					<input class="input__field input__field--hoshi" id="senha" name="passwordAluno" type="password" id="input-4" required />
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
 						<span class="input__label-content input__label-content--hoshi">Senha</span>
 					</label>
@@ -63,7 +62,7 @@
 				<input class="button" value="Login" type="submit">
 			</div>
 			<div class="line-form">
-				<a href="https://www.uezo.rj.gov.br/aluno/msg_esqueci_a_senha.php"> Esqueci a senha!</a>
+				<a class="forgot-password" href="https://www.uezo.rj.gov.br/aluno/msg_esqueci_a_senha.php"> Esqueci a senha!</a>
 			</div>
 		  </div>
 		</form>
@@ -71,5 +70,7 @@
 	   <div class="col-sm-4"></div>
 	  </div>
 	</section>
+<script src="js/classie.js"></script>
+<script type="text/javascript" src="js/js-modifications.js"></script>
 </body>
 </html>
