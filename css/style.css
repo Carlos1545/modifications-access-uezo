@@ -11,9 +11,16 @@ body{
     padding: 0px;
     margin: 0px;
 	
-    background: #355C7D;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #43C6AC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #303952, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+
+
+
 }
 
 /*********************************** HEADER ***/
@@ -54,6 +61,7 @@ header{
 	padding: 20px;
 	font-size: 22px;
 	letter-spacing: 3px;
+	background-color: #262d41;
 }
 #form-body{
 	background-color: #fff;
@@ -91,18 +99,17 @@ input:focus {
   -webkit-font-smoothing: antialiased;
   text-align: center;
   letter-spacing: 1px;
-  background: transparent;
   border: 0;
-  border-bottom: 3px solid #005488;
+  border-bottom: 3px solid #151c30;
   cursor: pointer;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
-  background: #0066a6;
+  background: #262d41;
   text-shadow: 1px 1px 0 rgba(39, 110, 204, .5);
 }
 .button:hover {
-	background: #357bd8;
-	border-bottom: 3px solid #0066a6;
+	background: #43C6AC;
+	border-bottom: 3px solid #32b59b;
 }
 .forgot-password{
 	margin: 0.5em 1em;
@@ -208,7 +215,7 @@ input:focus {
 	left: 0;
 	width: 100%;
 	height: calc(100% - 10px);
-	border-bottom: 1px solid #0066a6;
+	border-bottom: 1px solid #aaa;
 }
 
 .input__label--hoshi::after {
@@ -221,7 +228,7 @@ input:focus {
 }
 
 .input__label--hoshi-color-1::after {
-	border-color: #0066a6;
+	border-color: #43C6AC;
 }
 
 .input__label--hoshi-color-2::after {
@@ -298,7 +305,8 @@ div.box-menu{
 }
 div.menu-uezo-title{
 	min-height: 50px;
-    background-color: #fff;
+    background-color: #262d41;
+	color: #fff;
     padding: 10px 30px;
     font-size: 21px;
 }
@@ -309,8 +317,8 @@ ul.menu-uezo{
 ul.menu-uezo li{
 	position: relative;
 	min-height: 50px;
-	background-color: #3a539b;
-	border-left: 4px #005488 solid;
+	background-color: #fff;
+	border-left: 4px #262d41 solid;
 	-webkit-transition: border-left 0.5s, background-color 0.5s; /* Safari */
     transition: border-left 0.5s, background-color 0.5s;
 }
@@ -321,21 +329,43 @@ ul.menu-uezo li a div{
 }
 ul.menu-uezo li a{
 	text-decoration: none;
-	color: #fff;
+	color: #262d41;
 	font-size:17px;
 	display: block;
 	padding: 15px 15px;
 	min-height: 50px;
     width: 100%;
 }
+
 ul.menu-uezo li:hover{
-	background-color: #357bd8;
-	border-left: 15px #005488 solid;
+	background-color: #43C6AC;
+	border-left: 15px #262d41 solid;
 }
 .new-alert{
 	position: absolute;
-    right: 20px;
-    top: 22px;
+    right: 5px;
+    top: 5px;
+}
+.new-alert:after{
+	content: "Novo!";
+    background-color: #43C6AC;
+    color: #fff;
+    width: 47px;
+    display: block;
+    text-align: center;
+    border-radius: 6px;
+	
+	-webkit-animation-name: novo; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-iteration-count: infinite;
+    animation-name: novo;
+    animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+@keyframes novo {
+    0% {background-color: #43C6AC;}
+    50% {background-color: #303952}
+	100% {background-color: #43C6AC;}
 }
 
 
