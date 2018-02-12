@@ -1,7 +1,7 @@
 /************** Esquema de Cores
  * Azul: #0066a6
  * Azul escuro: #262d41
- * Azul claro: #357bd8;
+ * Azul claro: #357bd8
  *
 */
 
@@ -293,7 +293,7 @@ input:focus {
     -moz-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
 }
-div.box-menu{
+.box-menu{
 	-webkit-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
     -moz-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
@@ -305,7 +305,7 @@ div.menu-uezo-title{
     padding: 10px 30px;
     font-size: 21px;
 }
-ul.menu-uezo{
+.menu-uezo{
 	list-style-type: none;
 	padding-left:0px;
 }
@@ -363,8 +363,20 @@ ul.menu-uezo li:hover{
 	100% {background-color: #43C6AC;}
 }
 
-
-
+/*********************************** TABELA DA PÁGINA DE CONSULTA DE NOTAS ***/
+.table-box{
+	-webkit-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
+    -moz-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
+	
+	background-color: #fff;
+}
+.table-box table thead{
+	background-color:#262d41;
+}
+.table-box table tbody{
+	color:#262d41;
+}
 
 
 
