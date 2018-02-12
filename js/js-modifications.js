@@ -65,12 +65,41 @@ function mphone(v) {
         r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/,"(0$1) $2-$3");
     }
     else if (r.length > 2) {
-        // 3..5 digits. Add (0XX..)
+        // 3..5 digits. Add (0..)
         r = r.replace(/^(\d\d)(\d{0,5})/,"(0$1) $2");
     }
     else {
-        // 0..2 digits. Just add (0XX
+        // 0..2 digits. Just add (0
         r = r.replace(/^(\d*)/, "(0$1");
+    }
+    return r;
+}
+function mask_cpf(o, f) {
+	setTimeout(function () {
+        var v = mcpf(o.value);
+        if (v != o.value) {
+            o.value = v;
+        }
+    }, 1);
+}
+function mcpf(v) {
+    var r = v.replace(/\D/g,"");
+    r = r.replace(/^0/,"");
+    if (r.length > 10) {
+        // 11+ digits. Format as 5+4.
+        r = r.replace(/^(\d{3})(\d{3})(\d{3})(\d{2}).*/,"$1.$2.$3-$4");
+    }
+	else if (r.length > 8) {
+        // 6..10 digits. Format as 4+4
+        r = r.replace(/^(\d{3})(\d{3})(\d{3})/,"$1.$2.$3-");
+    }
+    else if (r.length > 5) {
+        // 6..10 digits. Format as 4+4
+        r = r.replace(/^(\d{3})(\d{3})/,"$1.$2.");
+    }
+    else if (r.length > 2) {
+        // 3..5 digits. Add (0..)
+        r = r.replace(/^(\d{3})/,"$1.");
     }
     return r;
 }

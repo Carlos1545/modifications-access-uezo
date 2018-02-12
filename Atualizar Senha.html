@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Portal UEZO - Portal do aluno</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script src="js/js-modifications.js"></script>
+	<script src="https://use.fontawesome.com/9d67606359.js"></script>
+</head>
+<body> <!-- ondragstart="return false" onselectstart="return false" oncontextmenu="return false" text="#000000" bgcolor="#FFFFFF">--> 
+<header id="nav-superior" style="background-color: #262d41;">
+	<div class="container">
+	  <div class="row">
+		<div class="col-sm-8" id="logo-wtext">
+		  <img alt="Governo do Estado do Rio de Janeiro" src="images/logo-uezo.png">
+		</div>
+
+		<div class="col-sm-4 text-right" id="div-pad">
+		  <i class="fa fa-undo"></i> <a href="http://www.uezo.rj.gov.br"> Website da Uezo</a>
+		</div>
+	  </div>
+	</div>
+</header>
+
+<div class="wrapper">
+<section class="container">
+ <div class="row">
+  <div id="navigation-info">
+	<div class="col-sm-8">
+		Matricula: 1423331068 --- data: 26/08/2017
+	</div>
+	<div class="col-sm-4 text-right">
+		<a href="https://www.uezo.rj.gov.br/aluno/altera_senha.php">Alterar senha</a> --- 
+		<a href="https://www.uezo.rj.gov.br/aluno/log_out_aluno.php">Sair</a>
+	</div>
+  </div>
+ </div>
+</section>
+
+<section class="container">
+ <div class="row">
+	<div class="col-md-12">
+		<form class="box-shadow" action="login_aluno.php" method="post">
+		  <div id="form-title" class="text-uppercase">Atualizar Senha</div> 
+		  <div id="form-body">
+		    <div class="line-form">
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="matricula" name="usernameAluno" onkeyup="javascript:somente_numero(this);" maxlength="10" type="text" required />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+						<span class="input__label-content input__label-content--hoshi">Matricula</span>
+					</label>
+				</span>
+			</div>
+			<div class="line-form">
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="cpf" name="cpf" onkeypress="javascript:mask_cpf(this, mcpf);" type="text" required/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="nome">
+						<span class="input__label-content input__label-content--hoshi">CPF</span>
+					</label>
+				</span>
+			</div>
+			<div class="line-form"> 
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="nomeMae" name="nomeMae" type="text" />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="nomeMae">
+						<span class="input__label-content input__label-content--hoshi">Primeiro Nome da sua Mãe</span>
+					</label>
+				</span>
+			</div>
+			<div class="line-form">
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="password" name="password" type="password" />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="password">
+						<span class="input__label-content input__label-content--hoshi">Senha Atual</span>
+					</label>
+				</span>
+			</div>
+			<div class="line-form">
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="newpassword" name="newpassword" type="text"/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="newpassword">
+						<span class="input__label-content input__label-content--hoshi">Nova Senha</span>
+					</label>
+				</span>
+			</div>
+			<div class="line-form">
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="newpasswordred" name="newpasswordred" type="text"/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="newpasswordred">
+						<span class="input__label-content input__label-content--hoshi">Redigite a Nova Senha - OBS: Não utilizar carcteres especiais</span>
+					</label>
+				</span>
+			</div>
+			<div class="line-form">
+				<input class="button" value="Atualizar Senha" type="submit">
+			</div>
+		  </div>
+		</form>
+	</div>
+ </div>
+</section>
+
+</div> <!-- /.wrapper -->
+<script src="js/classie.js"></script>
+<script type="text/javascript" src="js/js-modifications.js"></script>
+</body>
+</html>

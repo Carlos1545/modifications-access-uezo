@@ -60,9 +60,6 @@ header{
 #form-body{
 	background-color: #fff;
 	padding-top:10px;
-	-webkit-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
-	-moz-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
-	box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
 }
 #form-body .line-form label{
 	color: #a9a9a9;
@@ -292,7 +289,7 @@ input:focus {
     -moz-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
 }
-.box-menu{
+.box-shadow{
 	-webkit-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
     -moz-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
@@ -363,11 +360,7 @@ ul.menu-uezo li:hover{
 }
 
 /*********************************** TABELA DA PÁGINA DE CONSULTA DE NOTAS ***/
-.table-box{
-	-webkit-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
-    -moz-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
-    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.34);
-	
+.table-box{	
 	background-color: #fff;
 }
 .table-box table thead{
