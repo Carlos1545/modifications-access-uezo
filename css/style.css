@@ -359,17 +359,25 @@ ul.menu-uezo li:hover{
 	100% {background-color: #43C6AC;}
 }
 
-/*********************************** TABELA DA PÁGINA DE CONSULTA DE NOTAS ***/
+/*********************************** TABELA DA PÁGINA DE CONSULTA DE NOTAS E DE FAZER REQUERIMENTOS ***/
 .table-box{	
 	background-color: #fff;
+	color:#262d41;
+	overflow: hidden;
 }
 .table-box table thead{
 	background-color:#262d41;
+	color: #fff;
 }
-.table-box table tbody{
-	color:#262d41;
+div.fazer-requerimento{
+	padding: 8px;
+	line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
 }
-
+div.label-mod-display div label{
+	display: inline;
+}
 
 
 

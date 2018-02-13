@@ -44,8 +44,8 @@
 <section class="container">
  <div class="row">
 	<div class="col-md-12">
-		<form action="login_aluno.php" method="post">
-		  <div id="form-title" class="text-uppercase">Atualizar Contato</div> 
+		<form class="box-shadow" action="login_aluno.php" method="post">
+		  <div class="menu-uezo-title">Carta de Apresentação para Estágio</div> 
 		  <div id="form-body">
 		    <div class="line-form">
 				<span class="input input--hoshi">
@@ -57,7 +57,7 @@
 			</div>
 			<div class="line-form">
 				<span class="input input--hoshi">
-					<input class="input__field input__field--hoshi" id="nome" name="nome" onkeyup="javascript:somente_numero(this);" type="text" value="Carlos Alberto Costa de Oliveira Junior" disabled/>
+					<input class="input__field input__field--hoshi" id="nome" name="nome" type="text" value="Carlos Alberto Costa de Oliveira Junior" disabled/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="nome">
 						<span class="input__label-content input__label-content--hoshi">Nome</span>
 					</label>
@@ -65,30 +65,54 @@
 			</div>
 			<div class="line-form"> 
 				<span class="input input--hoshi">
-					<input class="input__field input__field--hoshi" id="telefone" name="telefoneAluno" onkeypress="javascript:mask(this, mphone);" onblur="javascript:mask(this, mphone);" type="text" />
-					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="telefone">
-						<span class="input__label-content input__label-content--hoshi">Telefone Residencial</span>
+					<input class="input__field input__field--hoshi" id="curso" name="curso" type="text" value="Ciência da Computação" disabled/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="curso">
+						<span class="input__label-content input__label-content--hoshi">Curso</span>
 					</label>
 				</span>
 			</div>
-			<div class="line-form">
+			<div class="line-form"> 
 				<span class="input input--hoshi">
-					<input class="input__field input__field--hoshi" id="celular" name="celularAluno" onkeypress="javascript:mask(this, mphone);" onblur="javascript:mask(this, mphone);" type="text" />
-					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="celular">
-						<span class="input__label-content input__label-content--hoshi">Celular</span>
+					<input class="input__field input__field--hoshi" id="cpf" name="cpf" type="text" value="161.594.447-86" disabled/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="cpf">
+						<span class="input__label-content input__label-content--hoshi">CPF</span>
 					</label>
 				</span>
 			</div>
-			<div class="line-form">
+			<div class="line-form"> 
 				<span class="input input--hoshi">
-					<input class="input__field input__field--hoshi" id="email" name="email" type="text"/>
+					<input class="input__field input__field--hoshi" id="nasc" name="nasc" type="text" value="09/05/1995" disabled/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="nasc">
+						<span class="input__label-content input__label-content--hoshi">Data de Nascimento</span>
+					</label>
+				</span>
+			</div>
+			<div class="line-form"> 
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="email" name="email" type="text" value="carlos.jr1545@gmail.com" disabled/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="email">
 						<span class="input__label-content input__label-content--hoshi">Email</span>
 					</label>
 				</span>
 			</div>
 			<div class="line-form">
-				<input class="button" value="Atualizar Contato" type="submit">
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="local" name="localEstagio" type="text" />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="local">
+						<span class="input__label-content input__label-content--hoshi">Local do Estágio</span>
+					</label>
+				</span>
+			</div>
+			<div class="line-form">
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" id="periodo" name="periodo" type="text"/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="periodo">
+						<span class="input__label-content input__label-content--hoshi">Período</span>
+					</label>
+				</span>
+			</div>
+			<div class="line-form">
+				<input class="button" value="Enviar Pedido" type="submit">
 			</div>
 		  </div>
 		</form>
