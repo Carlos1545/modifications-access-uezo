@@ -284,6 +284,7 @@ input:focus {
 	color: #262d41;
 	margin: 15px 0px;
 	padding: 5px;
+	
 	min-height: 33px;
 	line-height: 22px;
 	
